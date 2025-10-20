@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .chat-message {
+        @apply max-w-[80%] py-3 px-6 rounded-3xl
+    }
+
+    .text-normal {
+        @apply text-base font-pop-medium
+    }
+}
