@@ -1,4 +1,4 @@
-import { router, Slot } from 'expo-router';
+import { router, Tabs } from 'expo-router';
 import React from 'react';
 
 const Layout = () => {
@@ -6,9 +6,32 @@ const Layout = () => {
 
     if (!isAuthenticated) return router.push("/sign-in")
 
-
     return (
-        <Slot />
+        <Tabs
+            screenOptions={{
+                headerShown: false,
+                tabBarStyle: { display: 'none' },
+            }}
+        >
+            <Tabs.Screen
+                name="index"
+                options={{
+                    title: 'Chat',
+                }}
+            />
+            <Tabs.Screen
+                name="diseases"
+                options={{
+                    title: 'Diseases',
+                }}
+            />
+            <Tabs.Screen
+                name="care-near-by"
+                options={{
+                    title: 'Care',
+                }}
+            />
+        </Tabs>
     )
 }
 

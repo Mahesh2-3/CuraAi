@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CuraAI",
-    "slug": "CuraAI",
+    "name": "CuraAi",
+    "slug": "curaAi",
     "version": "1.0.0",
     "orientation": "portrait",
     "scheme": "project",
@@ -13,7 +13,9 @@
     "android": {
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "softwareKeyboardLayoutMode": "pan"
+      "softwareKeyboardLayoutMode": "pan",
+      "package": "com.curaai",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "output": "static",
@@ -21,10 +23,11 @@
     },
     "plugins": [
       "expo-router",
+      "@react-native-google-signin/google-signin",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "assets/images/logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
@@ -32,11 +35,18 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b1f24e0b-f075-4181-bcd2-0f74f3e68361"
+      }
     }
   }
 }

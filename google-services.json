@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "721018161379",
+    "project_id": "curaai-27023",
+    "storage_bucket": "curaai-27023.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721018161379:android:40f5a605d571d90adc5dd6",
+        "android_client_info": {
+          "package_name": "com.curaai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721018161379-u1618cbclvn1743tpcbb5qk9322u3mrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.curaai",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "721018161379-dkran6nvesi9bdd8tbm2gsk0ecii75mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxLd46E7MH9qnsNkhQ97J2OO9M3aH09oI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721018161379-dkran6nvesi9bdd8tbm2gsk0ecii75mu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "721018161379-b1vsmrpa9j0gn09o6uqbee2chn382ugf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.curaai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

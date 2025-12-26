@@ -1,12 +1,15 @@
 export { default as AiChatIcon } from "./AiChat";
+export { default as BackIcon } from "./Back";
 export { default as CalenderIcon } from "./Calender";
 export { default as CloseIcon } from "./Close";
 export { default as CoughIcon } from "./Cough";
 export { default as DangerIcon } from "./Danger";
+export { default as EyeIcon } from "./Eye";
+export { default as EyeCrossIcon } from "./EyeCross";
 export { default as GoogleIcon } from "./Google";
 export { default as HeadDownIcon } from "./HeadDown";
 export { default as HospitalIcon } from "./Hospital";
-export { default as Image1Icon } from "./Image1";
+// export { default as Image1Icon } from "./Image1";
 export { default as InfoIcon } from "./Info";
 export { default as LocationIcon } from "./Location";
 export { default as LockIcon } from "./Lock";

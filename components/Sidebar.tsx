@@ -1,6 +1,7 @@
 import { CloseIcon, SettingsIcon, ThreeDotsIcon } from "@/assets/react-icons";
 import { history, sidebarOptions } from "@/constants/theme";
-import { useEffect, useState } from "react";
+import { router } from "expo-router";
+import React, { useEffect, useState } from "react";
 import { FlatList, Image, Pressable, Text, View } from "react-native";
 
 export default function SideBar({ isSidebarOpen, setIsSidebarOpen }: { isSidebarOpen: boolean, setIsSidebarOpen: (value: boolean) => void }) {
@@ -9,7 +10,7 @@ export default function SideBar({ isSidebarOpen, setIsSidebarOpen }: { isSidebar
 
     useEffect(() => {
         setHistory(history)
-    }, [history])
+    }, [])
 
 
 
@@ -42,7 +43,8 @@ export default function SideBar({ isSidebarOpen, setIsSidebarOpen }: { isSidebar
                     return (
                         <Pressable
                             key={index}
-                            onPress={() => { }}
+                            //@ts-ignore
+                            onPress={() => router.push(option.link)}
                             className="flex-row hover:bg-[#a5e9a8] gap-6 items-center py-2 p-3 rounded-md"
                         >
                             <Icon className="w-[50px]" />
